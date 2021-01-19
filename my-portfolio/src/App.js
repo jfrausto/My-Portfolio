@@ -5,30 +5,32 @@ import {
   Text,
   VStack,
   Grid,
-  extendTheme
+  Button,
+  Link
 } from '@chakra-ui/react';
 // import theme from "./theme.js";
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
-import { useTheme } from '@emotion/react';
+import theme from "./theme";
+// import {Button} from "./theme/components/Button";
 
 function App() {
 
   // const theme = useTheme();
 
   // my personal brand colors
-  const myColors = {
-    colors: {
-      brand: {
-        100: "#ffebeb",
-        300: "#ffa400",
-        500: "#009ffd",
-        700: "#dc143c",
-        900: "#233347"
-      }
-    }
-  };
-  const theme = extendTheme( myColors );
+  // const myColors = {
+  //   colors: {
+  //     brand: {
+  //       100: "#ffebeb",
+  //       300: "#ffa400",
+  //       500: "#009ffd",
+  //       700: "#dc143c",
+  //       900: "#233347"
+  //     }
+  //   }
+  // };
+  // const theme = extendTheme( myColors );
 
   return (
     <ChakraProvider theme={theme}>
@@ -40,7 +42,9 @@ function App() {
             <Text color="brand.300">
               Portfolio coming soon...!
             </Text>
-          
+            <Button>yooo</Button>
+            <Text color="brand.700">hi i should be red</Text>
+
           </VStack>
         </Grid>
       </Box>
