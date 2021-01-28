@@ -10,6 +10,7 @@ import {
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import theme from "./theme";
 import MainHeading from "./components/MainHeading";
+import Content from './components/Content';
 
 
 function App() {
@@ -39,37 +40,11 @@ function App() {
             - links and screenshots to projects
             - contact 
         */}
-        <Grid minH="100vh" p={3}>
-          <VStack spacing={0}>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-          </VStack>
+        <Grid minH="100vh" p={6}>
+          {/* not using grid for its intended use here.. lol */}
+          <Content/>
         </Grid>
+
       </Box>
     </ChakraProvider>
   );

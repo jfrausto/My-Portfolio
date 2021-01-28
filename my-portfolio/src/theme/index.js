@@ -1,13 +1,15 @@
 import { extendTheme } from "@chakra-ui/react";
 
+// main theme entry point
+// wannabe theme.js
 
-// ! Global style overrides
+// * Global style overrides
 import styles from "./styles";
-// ! Foundational style overrides
+// * Foundational style overrides
 // ...
 // import brand colors
 import colors from "./foundations/colors";
-// ! Component style overrides
+// * Component style overrides
 import Button from "./components/Button";
 
 // configure the portfolio to start in dark mode
