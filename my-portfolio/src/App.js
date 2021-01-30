@@ -10,7 +10,7 @@ import {
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import theme from "./theme";
 import MainHeading from "./components/MainHeading";
-import Content from './components/Content';
+import Nav from './components/Nav';
 
 
 function App() {
@@ -40,10 +40,23 @@ function App() {
             - links and screenshots to projects
             - contact 
         */}
-        <Grid minH="100vh" p={6}>
+        <Box 
+          minH="15vh" 
+          bg="blue.200"
+          p={4}
+        >
           {/* not using grid for its intended use here.. lol */}
-          <Content/>
-        </Grid>
+          {/* could do a grid like */}
+          <Nav/>
+        </Box>
+        {/* 
+          another grid for the main content?????
+        */}
+        <Box
+          minH="85vh"
+          bg="blue.800"
+        >
+        </Box>
 
       </Box>
     </ChakraProvider>
