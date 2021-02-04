@@ -1,5 +1,6 @@
 import React from 'react';
 import { HStack, Text, Stack, Box, Spacer, Flex } from "@chakra-ui/react";
+import { Router, Link } from "react-router-dom";
 
 
 export default function Nav() {
@@ -11,19 +12,25 @@ export default function Nav() {
         bg="blue.200"
         spacing
       > */}
-      <Flex justifySelf="flex-end">
+      <HStack justify="center">
           <Box h="24"  w="24" p={3} bg="red.500">
-          adsf
+            <Link to={"/about"}>
+              about
+            </Link>
+          
           </Box>
-          <Spacer/>
           <Box h="24" w="24" p={3} bg="red.800">
-            xxxx
+            <Link to={"/portfolio"}>
+              portfolio
+            </Link>
           </Box>
-          <Spacer/>
+          
           <Box h="24" w="24" p={3} bg="red.100">
-            zzzz
+            <Link to={"/contact"}>
+              contact
+            </Link>
           </Box>
-        </Flex>
+        </HStack>
       {/* </HStack> */}
 
     {/* main content stack */}
