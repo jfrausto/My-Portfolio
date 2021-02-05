@@ -1,35 +1,47 @@
 import React from 'react';
-import { HStack, Text, Stack, Box, Spacer, Flex } from "@chakra-ui/react";
-import { Router, Link } from "react-router-dom";
+import { HStack, VStack, IconButton } from "@chakra-ui/react";
+import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 
 export default function Nav() {
   return (
     <>
-    {/* navigation stack */}
-      {/* <HStack
-        p={3}
-        bg="blue.200"
-        spacing
-      > */}
-      <HStack justify="center">
-          <Box h="24"  w="24" p={3} bg="red.500">
-            <Link to={"/about"}>
-              about
-            </Link>
-          
-          </Box>
-          <Box h="24" w="24" p={3} bg="red.800">
-            <Link to={"/portfolio"}>
-              portfolio
-            </Link>
-          </Box>
-          
-          <Box h="24" w="24" p={3} bg="red.100">
-            <Link to={"/contact"}>
-              contact
-            </Link>
-          </Box>
+    {/* navigation stack ---- a hstack with vstacks for centering easier */}
+      <HStack justify="center" spacing={["1", "4", "8", "20"]}>
+          <VStack h="20" w="24" p={2} justify="center" bg="red.500">
+            <IconButton 
+              size="lg" 
+              variant="ghost" 
+              icon={<FaMale/>}
+              _focus={{
+                  outline: "none"
+              }} 
+              as={Link} 
+              to={"/about"}/>
+          </VStack>
+          <VStack h="20" w="24" p={2} justify="center" bg="red.800">
+            <IconButton 
+            size="lg"
+            variant="ghost" 
+            icon={<FaLaptopCode/>}
+            _focus={{
+                outline: "none"
+            }} 
+            as={Link} 
+            to={"/portfolio"}/>
+          </VStack>
+          <VStack h="20" w="24" mt="2" p={2} justify="center" bg="red.100">
+            <IconButton 
+              size="lg"
+              variant="ghost" 
+              icon={<FaMailBulk/>}
+              _focus={{
+                  outline: "none"
+              }} 
+              as={Link} 
+              to={"/contact"}/>
+          </VStack>
         </HStack>
       {/* </HStack> */}
 

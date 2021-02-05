@@ -48,7 +48,7 @@ function App() {
             <Box 
             minH="15vh" 
             bg="blue.200"
-            p={4}
+            p={3}
           >
             {/* not using grid for its intended use here.. lol */}
             {/* could do a grid like */}
