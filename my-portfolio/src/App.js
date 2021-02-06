@@ -5,8 +5,12 @@ import {
   Text,
   VStack,
   Grid,
+  Container,
+  IconButton
 } from '@chakra-ui/react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import theme from "./theme.js";
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import About from "./components/About";
@@ -44,21 +48,16 @@ function App() {
             - links and screenshots to projects
             - contact 
         */}
-        <Router>
-          <VStack
+        {/* <Router> */}
+          {/* <VStack
             minH="15vh"
             borderTop="2px"
             borderTopColor="brand.300"
             p={3}
           >
-            {/* not using grid for its intended use here.. lol */}
-            {/* could do a grid like */}
             <Nav/>
           </VStack>
 
-          {/* 
-            another grid for the main content?????
-          */}
           <Box
             minH="85vh"
             bg="blue.800"
@@ -75,9 +74,86 @@ function App() {
                 <Contact/>
               </Route>
             </Switch>
-          </Box>
-        </Router>
+          </Box> */}
+        {/* </Router> */}
+        
+        <Box
+          minH="100vh"
+          maxW="1500px"
+          marginX="auto"
+          py={8}
+          px={2}
+          bg="blue.200"
+        >
+          <Tabs isFitted variant="unstyled">
+            <TabList my={3}>
+              <Tab 
+                _selected={{ 
+                  borderBottom: "1px solid",
+                  borderTop: "1px solid"
+                }}
+                _focus={{
+                  outline: "none"}} 
+              >
+                <IconButton 
+                  size="lg" 
+                  h="16" w="16"
+                  variant="ghost" 
+                  icon={<FaMale/>}
+                  _focus={{
+                      outline: "none"
+                  }} 
+                />
+              </Tab>
+              <Tab 
+              _selected={{ 
+                borderBottom: "1px solid",
+                borderTop: "1px solid"
+              }}
+              _focus={{ outline: "none" }} 
+              >
+                <IconButton 
+                  size="lg" 
+                  h="16" w="16"
+                  variant="ghost" 
+                  icon={<FaLaptopCode/>}
+                  _focus={{
+                      outline: "none"
+                  }} 
+                />
+              </Tab>
+              <Tab 
+                _selected={{ 
+                  borderBottom: "1px solid",
+                  borderTop: "1px solid"
+                }}
+                _focus={{ outline: "none" }} 
+                >
+                <IconButton 
+                  size="lg" 
+                  h="16" w="16"
+                  variant="ghost" 
+                  icon={<FaMailBulk/>}
+                  _focus={{
+                      outline: "none"
+                  }} 
+                />
+              </Tab>
+            </TabList>
+            <TabPanels mt={4}>
+              <TabPanel>
+                <About/>
+              </TabPanel>
+              <TabPanel>
+                <Portfolio/>
+              </TabPanel>
+              <TabPanel>
+                <Contact/>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
 
+        </Box>
         
 
       </Box>

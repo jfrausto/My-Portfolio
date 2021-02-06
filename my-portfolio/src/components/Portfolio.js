@@ -1,13 +1,16 @@
-import { Container, Heading, Wrap, WrapItem, Center } from '@chakra-ui/react'
+import { Container, Heading, Wrap, WrapItem, Center, Box } from '@chakra-ui/react'
 import React from 'react'
 
 export default function Portfolio() {
   return (
     <div>
-      <Heading mb="4">
-        My Work
-      </Heading>
-      <Container>
+      <Box as={Heading} marginBottom="2rem">
+        Projects
+      </Box>
+      <Box
+        bg="red.400"
+        paddingX={6}
+      >
         <Wrap spacing="30px" justify="center">
           <WrapItem>
             <Center w="180px" h="80px" bg="red.200">
@@ -35,7 +38,7 @@ export default function Portfolio() {
             </Center>
           </WrapItem>
         </Wrap>
-      </Container>
+      </Box>
     </div>
   )
 }
