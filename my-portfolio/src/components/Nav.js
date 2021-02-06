@@ -8,10 +8,13 @@ export default function Nav() {
   return (
     <>
     {/* navigation stack ---- a hstack with vstacks for centering easier */}
-      <HStack justify="center" spacing={["1", "4", "8", "20"]}>
-          <VStack h="20" w="24" p={2} justify="center" bg="red.500">
+      {/* HSTACK BG GREEN */}
+      <HStack justify="center" spacing={["1", "4", "8", "20"]} my="auto">
+        {/* VSTACKS BGs? */}
+          <VStack h="20" w={["20", "24", "32", "40"]} p={2} justify="center">
             <IconButton 
               size="lg" 
+              h="16" w="16"
               variant="ghost" 
               icon={<FaMale/>}
               _focus={{
@@ -20,9 +23,10 @@ export default function Nav() {
               as={Link} 
               to={"/about"}/>
           </VStack>
-          <VStack h="20" w="24" p={2} justify="center" bg="red.800">
+          <VStack h="20" w={["20", "24", "32", "40"]} p={2} justify="center">
             <IconButton 
             size="lg"
+            h="16" w="16"
             variant="ghost" 
             icon={<FaLaptopCode/>}
             _focus={{
@@ -31,9 +35,10 @@ export default function Nav() {
             as={Link} 
             to={"/portfolio"}/>
           </VStack>
-          <VStack h="20" w="24" mt="2" p={2} justify="center" bg="red.100">
+          <VStack h="20" w={["20", "24", "32", "40"]} mt="2" p={2} justify="center">
             <IconButton 
               size="lg"
+              h="16" w="16"
               variant="ghost" 
               icon={<FaMailBulk/>}
               _focus={{

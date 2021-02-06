@@ -45,15 +45,16 @@ function App() {
             - contact 
         */}
         <Router>
-            <Box 
-            minH="15vh" 
-            bg="blue.200"
+          <VStack
+            minH="15vh"
+            borderTop="2px"
+            borderTopColor="brand.300"
             p={3}
           >
             {/* not using grid for its intended use here.. lol */}
             {/* could do a grid like */}
             <Nav/>
-          </Box>
+          </VStack>
 
           {/* 
             another grid for the main content?????
@@ -61,6 +62,7 @@ function App() {
           <Box
             minH="85vh"
             bg="blue.800"
+            p={8}
           >   
             <Switch>
               <Route exact path={["/", "/about"]}>
