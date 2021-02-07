@@ -11,6 +11,7 @@ export default function About() {
         justifyContent="center"
         justifyItems="center"
         p={2}
+        mt={8}
       >
         <Center>
         <Box
