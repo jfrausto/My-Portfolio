@@ -20,7 +20,7 @@ import BurgerDBMov from './videos/Burger_DB_demo.mp4';
 export default function Portfolio() {
   return (
     <div>
-      <Box as={Heading} marginBottom="2rem">
+      <Box as={Heading} marginBottom="2rem" marginTop={2}>
         Projects
       </Box>
       <Box

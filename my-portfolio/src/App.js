@@ -83,7 +83,6 @@ function App() {
           marginX="auto"
           py={8}
           px={2}
-          bg="blue.200"
         >
           <Nav/>
 
