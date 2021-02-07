@@ -13,9 +13,9 @@ import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import theme from "./theme.js";
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
+// import About from "./components/About";
+// import Contact from "./components/Contact";
+// import Portfolio from "./components/Portfolio";
 import theme from "./theme";
 import MainHeading from "./components/MainHeading";
 import Nav from './components/Nav';
@@ -85,73 +85,7 @@ function App() {
           px={2}
           bg="blue.200"
         >
-          <Tabs isFitted variant="unstyled">
-            <TabList my={3}>
-              <Tab 
-                _selected={{ 
-                  borderBottom: "1px solid",
-                  borderTop: "1px solid"
-                }}
-                _focus={{
-                  outline: "none"}} 
-              >
-                <IconButton 
-                  size="lg" 
-                  h="16" w="16"
-                  variant="ghost" 
-                  icon={<FaMale/>}
-                  _focus={{
-                      outline: "none"
-                  }} 
-                />
-              </Tab>
-              <Tab 
-              _selected={{ 
-                borderBottom: "1px solid",
-                borderTop: "1px solid"
-              }}
-              _focus={{ outline: "none" }} 
-              >
-                <IconButton 
-                  size="lg" 
-                  h="16" w="16"
-                  variant="ghost" 
-                  icon={<FaLaptopCode/>}
-                  _focus={{
-                      outline: "none"
-                  }} 
-                />
-              </Tab>
-              <Tab 
-                _selected={{ 
-                  borderBottom: "1px solid",
-                  borderTop: "1px solid"
-                }}
-                _focus={{ outline: "none" }} 
-                >
-                <IconButton 
-                  size="lg" 
-                  h="16" w="16"
-                  variant="ghost" 
-                  icon={<FaMailBulk/>}
-                  _focus={{
-                      outline: "none"
-                  }} 
-                />
-              </Tab>
-            </TabList>
-            <TabPanels mt={4}>
-              <TabPanel>
-                <About/>
-              </TabPanel>
-              <TabPanel>
-                <Portfolio/>
-              </TabPanel>
-              <TabPanel>
-                <Contact/>
-              </TabPanel>
-            </TabPanels>
-          </Tabs>
+          <Nav/>
 
         </Box>
         

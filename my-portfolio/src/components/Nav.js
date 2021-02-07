@@ -2,16 +2,91 @@ import React from 'react';
 import { HStack, VStack, IconButton } from "@chakra-ui/react";
 import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import About from "./About";
+import Contact from "./Contact";
+import Portfolio from "./Portfolio";
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+
 
 
 export default function Nav() {
   return (
     <>
+      <Tabs isFitted variant="unstyled">
+        <TabList my={3}>
+          <Tab 
+            _selected={{ 
+              borderBottom: "1px solid",
+              borderTop: "1px solid"
+            }}
+            _focus={{
+              outline: "none"}} 
+          >
+            <IconButton 
+              size="lg" 
+              h="12" w="12"
+              variant="ghost" 
+              icon={<FaMale/>}
+              _focus={{
+                  outline: "none"
+              }} 
+            />
+          </Tab>
+          <Tab 
+          _selected={{ 
+            borderBottom: "1px solid",
+            borderTop: "1px solid"
+          }}
+          _focus={{ outline: "none" }} 
+          >
+            <IconButton 
+              size="lg" 
+              h="12" w="12"
+              variant="ghost" 
+              icon={<FaLaptopCode/>}
+              _focus={{
+                  outline: "none"
+              }} 
+            />
+          </Tab>
+          <Tab 
+            _selected={{ 
+              borderBottom: "1px solid",
+              borderTop: "1px solid"
+            }}
+            _focus={{ outline: "none" }} 
+            >
+            <IconButton 
+              size="lg" 
+              h="12" w="12"
+              variant="ghost" 
+              icon={<FaMailBulk/>}
+              _focus={{
+                  outline: "none"
+              }} 
+            />
+          </Tab>
+        </TabList>
+        <TabPanels mt={4}>
+          <TabPanel>
+            <About/>
+          </TabPanel>
+          <TabPanel>
+            <Portfolio/>
+          </TabPanel>
+          <TabPanel>
+            <Contact/>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
+
+
+
     {/* navigation stack ---- a hstack with vstacks for centering easier */}
       {/* HSTACK BG GREEN */}
-      <HStack justify="center" spacing={["1", "4", "8", "20"]} my="auto">
+      {/* <HStack justify="center" spacing={["1", "4", "8", "20"]} my="auto"> */}
         {/* VSTACKS BGs? */}
-          <VStack h="20" w={["20", "24", "32", "40"]} p={2} justify="center">
+          {/* <VStack h="20" w={["20", "24", "32", "40"]} p={2} justify="center">
             <IconButton 
               size="lg" 
               h="16" w="16"
@@ -47,7 +122,7 @@ export default function Nav() {
               as={Link} 
               to={"/contact"}/>
           </VStack>
-        </HStack>
+        </HStack> */}
       {/* </HStack> */}
 
     {/* main content stack */}
