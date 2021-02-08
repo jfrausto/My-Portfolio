@@ -1,5 +1,5 @@
 import React from 'react';
-import { HStack, VStack, IconButton } from "@chakra-ui/react";
+import { HStack, VStack, IconButton, useColorModeValue, useColorMode } from "@chakra-ui/react";
 import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import About from "./About";
@@ -14,10 +14,12 @@ export default function Nav() {
     <>
       <Tabs isFitted variant="unstyled">
         <TabList my={3}>
-          <Tab 
+          <Tab
+            borderRadius="md"
             _selected={{ 
-              borderBottom: "1px solid",
-              borderTop: "1px solid"
+              bg: useColorModeValue("transparent", "transparent"),
+              border: "1px solid",
+              borderColor: useColorModeValue("brand.900", "brand.300"),
             }}
             _focus={{
               outline: "none"}} 
@@ -27,15 +29,18 @@ export default function Nav() {
               h="12" w="12"
               variant="ghost" 
               icon={<FaMale/>}
+              color={useColorModeValue("brand.900", "brand.100")}
               _focus={{
                   outline: "none"
               }} 
             />
           </Tab>
           <Tab 
+          borderRadius="md"
           _selected={{ 
-            borderBottom: "1px solid",
-            borderTop: "1px solid"
+            bg: useColorModeValue("transparent", "transparent"),
+            border: "1px solid",
+              borderColor: useColorModeValue("brand.900", "brand.300"),
           }}
           _focus={{ outline: "none" }} 
           >
@@ -44,15 +49,18 @@ export default function Nav() {
               h="12" w="12"
               variant="ghost" 
               icon={<FaLaptopCode/>}
+              color={useColorModeValue("brand.900", "brand.100")}
               _focus={{
                   outline: "none"
               }} 
             />
           </Tab>
-          <Tab 
+          <Tab
+            borderRadius="md"
             _selected={{ 
-              borderBottom: "1px solid",
-              borderTop: "1px solid"
+              bg: useColorModeValue("transparent", "transparent"),
+              border: "1px solid",
+              borderColor: useColorModeValue("brand.900", "brand.300"),
             }}
             _focus={{ outline: "none" }} 
             >
@@ -61,6 +69,7 @@ export default function Nav() {
               h="12" w="12"
               variant="ghost" 
               icon={<FaMailBulk/>}
+              color={useColorModeValue("brand.900", "brand.100")}
               _focus={{
                   outline: "none"
               }} 

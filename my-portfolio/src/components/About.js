@@ -6,7 +6,6 @@ export default function About() {
   return (
     <div>
       <Stack
-        bg="green.500"
         direction={["column", "column", "row", "row"]}
         justifyContent="center"
         justifyItems="center"
@@ -18,7 +17,6 @@ export default function About() {
           justifySelf="center"
           maxW={["656px", "577px" , "448px", "448px"]}
           minW={["248px", "534px", "405px", "540px"]}
-          bg="red.500"
         >
             <Image
               src={Jesse}
@@ -31,7 +29,6 @@ export default function About() {
         </Center>
         <VStack 
           justifyContent="center"
-          bg="blue.200"
         >
           <Container>
                   <Heading textAlign={["center", "center", "left", "left"]}>

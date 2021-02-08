@@ -2,11 +2,12 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
+  Center,
   Text,
-  VStack,
   Grid,
-  Container,
-  IconButton
+  Link,
+  useColorMode,
+  useColorModeValue
 } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
@@ -83,8 +84,23 @@ function App() {
           marginX="auto"
           py={8}
           px={2}
+          position="relative"
         >
           <Nav/>
+          <Box 
+            position="absolute"
+            bottom="0"
+            left="43.5%"
+            justifySelf="center"
+            p={2}
+            borderRadius="md"
+            border="1px solid"
+            borderColor={useColorModeValue("brand.900", "brand.300")}
+            >
+              <Text fontSize="16px">
+                powered by <Link href="https://chakra-ui.com/" isExternal>Chakra UI</Link>
+              </Text>
+          </Box>
 
         </Box>
         

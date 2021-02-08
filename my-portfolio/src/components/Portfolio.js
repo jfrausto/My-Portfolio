@@ -5,10 +5,10 @@ import {
   WrapItem, 
   Center, 
   Box,
-  LinkBox,
-  LinkOverlay,
+  useColorModeValue,
   VStack,
-  Link
+  Link,
+  useColorMode
 } from '@chakra-ui/react'
 import React from 'react';
 import VibeeMov from './videos/Vibee_TAB_demo.mp4';
@@ -22,18 +22,22 @@ import BurgerDBMov from './videos/Burger_DB_TAB_demo.mp4';
 export default function Portfolio() {
   return (
     <div>
-      <Box as={Heading} size="xl" marginBottom="2rem" marginTop={2}>
+      <Box as={Heading} size="xl" marginBottom="2rem" 
+        textDecoration="underline crimson"
+        color={useColorModeValue("brand.900", "brand.100")}
+        marginTop={1}
+        >
         Projects
       </Box>
       <Box
         paddingX={6}
       >
-        <Wrap spacing="30px" justify="center">
+        <Wrap spacing="30px" align="center" justify="center">
           <WrapItem>
             <Center maxW="480px" p={3}>
                 <VStack>
                   <Heading size="md">
-                    <Link href="https://evening-sands-41595.herokuapp.com/" isExternal>
+                    <Link href="https://evening-sands-41595.herokuapp.com/" color={useColorModeValue("brand.500", "brand.300")} isExternal>
                       Vibee
                     </Link>
                   </Heading>
@@ -47,7 +51,7 @@ export default function Portfolio() {
             <Center maxW="480px" p={3}>
               <VStack>
                 <Heading size="md">
-                  <Link href="https://willrodgers7.github.io/Ultimate-Pub-Crawl/" isExternal>
+                  <Link href="https://willrodgers7.github.io/Ultimate-Pub-Crawl/" color={useColorModeValue("brand.500", "brand.300")} isExternal>
                     Pub Crawl
                   </Link>
                 </Heading>
@@ -61,7 +65,7 @@ export default function Portfolio() {
             <Center maxW="480px" p={3}>
               <VStack>
                 <Heading size="md">
-                  <Link href="https://learn-squad.herokuapp.com/" isExternal>
+                  <Link href="https://learn-squad.herokuapp.com/" color={useColorModeValue("brand.500", "brand.300")} isExternal>
                     Learning Squads
                   </Link>
                 </Heading>
@@ -75,7 +79,7 @@ export default function Portfolio() {
             <Center maxW="480px" p={3}>
               <VStack>
                 <Heading size="md">
-                  <Link href="https://gentle-oasis-33918.herokuapp.com/" isExternal>
+                  <Link href="https://gentle-oasis-33918.herokuapp.com/" color={useColorModeValue("brand.500", "brand.300")} isExternal>
                     Burger DB
                   </Link>
                 </Heading>
@@ -89,7 +93,7 @@ export default function Portfolio() {
             <Center maxW="480px" p={3}>
               <VStack>
                 <Heading size="md">
-                  <Link href="https://rocky-garden-31416.herokuapp.com/" isExternal>
+                  <Link href="https://rocky-garden-31416.herokuapp.com/" color={useColorModeValue("brand.500", "brand.300")} isExternal>
                     Budget Tracker
                   </Link>
                 </Heading>
