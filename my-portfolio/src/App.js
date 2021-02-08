@@ -20,6 +20,8 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 import theme from "./theme";
 import MainHeading from "./components/MainHeading";
 import Nav from './components/Nav';
+import Goo from "./components/Goo";
+
 
 
 function App() {
@@ -38,7 +40,8 @@ function App() {
         */}
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
-          <MainHeading />
+          <MainHeading  />
+          <Goo/>
         </Grid>
 
         {/* 

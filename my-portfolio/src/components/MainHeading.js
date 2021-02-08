@@ -3,8 +3,10 @@ import {
   useColorModeValue, 
   VStack,
   Heading,
-  Text
+  Text,
+  Box
  } from '@chakra-ui/react';
+
 
 export default function MainHeading() {
   return (
@@ -17,6 +19,7 @@ export default function MainHeading() {
               lineHeight="shorter" 
               maxW="56rem"
               letterSpacing="tighter"
+              zIndex="overlay"
             >
               Hi, my name is Jesse Frausto. I'm a full-stack web developer.
             </Heading>
