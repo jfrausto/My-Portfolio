@@ -10,7 +10,7 @@ export default function About() {
         justifyContent="center"
         justifyItems="center"
         p={2}
-        mt={8}
+        marginX="auto"
       >
         <Center>
         <Box

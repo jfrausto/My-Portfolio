@@ -8,6 +8,7 @@ export default function Contact() {
       
         <Box
           marginTop={1}
+          marginX="auto"
           maxW="1400px"
           >
             <Heading 
@@ -22,6 +23,7 @@ export default function Contact() {
       
         <Box
           maxW="1400px"
+          marginX="auto"
         >
           <Container mt={8}>
           <List spacing={4} textAlign="left">
@@ -42,8 +44,11 @@ export default function Contact() {
           </Container>
         </Box>
 
-        <Container mt={8}>
-          <Wrap justify="center" spacing="35px" shouldWrapChildren="true">
+        <Container 
+          mt={8}
+          marginX="auto"
+        >
+          <Wrap justify="center" spacing="35px">
             <WrapItem>
               <Button as="a" target="_blank" variant="outline" href="https://github.com/jfrausto" textTransform="lowercase" leftIcon={<FaGithub />}>
                 Github
