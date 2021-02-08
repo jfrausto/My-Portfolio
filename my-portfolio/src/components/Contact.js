@@ -39,15 +39,15 @@ export default function Contact() {
         </Box>
 
         <Container mt={8}>
-          <HStack justify="center" spacing="50px" textTransform="lowercase">
-            <Button variant="outline" leftIcon={<FaGithub />}>
+          <HStack justify="center" spacing="50px" >
+            <Button as="a" target="_blank" variant="outline" href="https://github.com/jfrausto" textTransform="lowercase" leftIcon={<FaGithub />}>
               Github
             </Button>
-            <Button variant="outline" leftIcon={<FaLinkedin />}>
+            <Button as="a" target="_blank" variant="outline" href="https://www.linkedin.com/in/jesse-f-9182331ab/" textTransform="lowercase" leftIcon={<FaLinkedin />}>
               Linkedin
             </Button>
-            <Button variant="outline" leftIcon={<FaGoogle />}>
-              GMail
+            <Button as="a" target="_blank" variant="outline" href="mailto:fraustojesse24@gmail.com" textTransform="lowercase" leftIcon={<FaGoogle />}>
+            fraustojesse24@gmail.com
             </Button>
           </HStack>
         </Container>
