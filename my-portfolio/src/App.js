@@ -29,7 +29,7 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
+      <Box textAlign="center" fontSize={["sm","md", "lg", "xl"]}>
 
         {/* 
             TOP GRID

@@ -29,15 +29,15 @@ export default function Contact() {
           <List spacing={4} textAlign="left">
             <ListItem color={useColorModeValue("brand.900", "brand.100")}>
               <ListIcon as={FaCheckCircle} color={useColorModeValue("brand.500", "brand.300")} />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              I think outside the box. I'm willing to try new ideas and workflows to accomplish our goals. 
             </ListItem>
             <ListItem color={useColorModeValue("brand.900", "brand.100")}>
               <ListIcon as={FaWrench} color={useColorModeValue("brand.500", "brand.300")} />
-              Assumenda, quia temporibus eveniet a libero incidunt suscipit
+              I'm able to quickly learn new technologies and apply their core principles to projects efficiently. 
             </ListItem>
             <ListItem color={useColorModeValue("brand.900", "brand.100")}>
               <ListIcon as={FaHandshake} color={useColorModeValue("brand.500", "brand.300")} />
-              Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+              I love making new relationships and working with people of all walks of life. Let's work and create something great!
             </ListItem>
             {/* You can also use custom icons from react-icons */}
           </List>

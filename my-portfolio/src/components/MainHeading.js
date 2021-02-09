@@ -15,7 +15,7 @@ export default function MainHeading() {
             {/* need special variants for name and taglines */}
             <Heading 
               color={useColorModeValue("brand.900", "brand.300")}
-              fontSize="5xl" 
+              fontSize={["xl", "2xl", "3xl", "5xl"]} 
               lineHeight="shorter" 
               maxW="56rem"
               letterSpacing="tighter"
