@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3dd96cb9.chunk.css",
+    "main.js": "/static/js/main.4ca41421.chunk.js",
+    "main.js.map": "/static/js/main.4ca41421.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.240dbf37.js",
+    "runtime-main.js.map": "/static/js/runtime-main.240dbf37.js.map",
+    "static/js/2.1badd1c8.chunk.js": "/static/js/2.1badd1c8.chunk.js",
+    "static/js/2.1badd1c8.chunk.js.map": "/static/js/2.1badd1c8.chunk.js.map",
+    "static/js/3.561abd47.chunk.js": "/static/js/3.561abd47.chunk.js",
+    "static/js/3.561abd47.chunk.js.map": "/static/js/3.561abd47.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3dd96cb9.chunk.css.map": "/static/css/main.3dd96cb9.chunk.css.map",
+    "static/js/2.1badd1c8.chunk.js.LICENSE.txt": "/static/js/2.1badd1c8.chunk.js.LICENSE.txt",
+    "static/media/Budeget_Tracker_TAB_demo.330e3774.mp4": "/static/media/Budeget_Tracker_TAB_demo.330e3774.mp4",
+    "static/media/Burger_DB_TAB_demo.b0db78c8.mp4": "/static/media/Burger_DB_TAB_demo.b0db78c8.mp4",
+    "static/media/Learn_Squad_TAB_demo.4a898442.mp4": "/static/media/Learn_Squad_TAB_demo.4a898442.mp4",
+    "static/media/Pub_Crawl_Gen_TAB_demo.275b9fa0.mp4": "/static/media/Pub_Crawl_Gen_TAB_demo.275b9fa0.mp4",
+    "static/media/Vibee_TAB_demo.639f8425.mp4": "/static/media/Vibee_TAB_demo.639f8425.mp4",
+    "static/media/jesse_shopped_cropped.106296fb.jpg": "/static/media/jesse_shopped_cropped.106296fb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.240dbf37.js",
+    "static/js/2.1badd1c8.chunk.js",
+    "static/css/main.3dd96cb9.chunk.css",
+    "static/js/main.4ca41421.chunk.js"
+  ]
+}
