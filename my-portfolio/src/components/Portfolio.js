@@ -43,7 +43,7 @@ export default function Portfolio() {
                       Vibee
                     </Link>
                   </Heading>
-                  <video autoplay="true" loop="true">
+                  <video autoPlay={true} loop={true}>
                     <source src={VibeeMov} type="video/mp4" />
                   </video>
                   <HStack spacing={1}>
@@ -87,7 +87,7 @@ export default function Portfolio() {
                     Pub Crawl
                   </Link>
                 </Heading>
-                <video autoplay="true" loop="true">
+                <video autoPlay={true} loop={true}>
                   <source src={PubCrawlMov} type="video/mp4" />
                 </video>
                 <HStack spacing={1}>
@@ -124,7 +124,7 @@ export default function Portfolio() {
                     Learning Squads
                   </Link>
                 </Heading>
-                <video autoplay="true" loop="true">
+                <video autoPlay={true} loop={true}>
                   <source src={LearnSquadMov} type="video/mp4" />
                 </video>
                 <HStack spacing={1}>
@@ -161,7 +161,7 @@ export default function Portfolio() {
                     Burger DB
                   </Link>
                 </Heading>
-                <video autoplay="true" loop="true">
+                <video autoPlay={true} loop={true}>
                   <source src={BurgerDBMov} type="video/mp4" />
                 </video>
                 <HStack spacing={1}>
@@ -198,7 +198,7 @@ export default function Portfolio() {
                     Budget Tracker
                   </Link>
                 </Heading>
-                <video autoplay="true" loop="true">
+                <video autoPlay={true} loop={true}>
                   <source src={BudgetTrackerMov} type="video/mp4" />
                 </video>
                 <HStack spacing={1}>

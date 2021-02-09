@@ -18,7 +18,7 @@ export default function Nav() {
             borderRadius="md"
             _selected={{ 
               bg: useColorModeValue("transparent", "transparent"),
-              border: "1px solid",
+              border: "4px solid",
               borderColor: useColorModeValue("brand.900", "brand.300"),
             }}
             _focus={{
@@ -39,7 +39,7 @@ export default function Nav() {
           borderRadius="md"
           _selected={{ 
             bg: useColorModeValue("transparent", "transparent"),
-            border: "1px solid",
+            border: "4px solid",
               borderColor: useColorModeValue("brand.900", "brand.300"),
           }}
           _focus={{ outline: "none" }} 
@@ -59,7 +59,7 @@ export default function Nav() {
             borderRadius="md"
             _selected={{ 
               bg: useColorModeValue("transparent", "transparent"),
-              border: "1px solid",
+              border: "4px solid",
               borderColor: useColorModeValue("brand.900", "brand.300"),
             }}
             _focus={{ outline: "none" }} 

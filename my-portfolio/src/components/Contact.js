@@ -8,6 +8,7 @@ export default function Contact() {
       
         <Box
           marginTop={1}
+          marginX="auto"
           maxW="1400px"
           >
             <Heading 
@@ -22,28 +23,32 @@ export default function Contact() {
       
         <Box
           maxW="1400px"
+          marginX="auto"
         >
           <Container mt={8}>
           <List spacing={4} textAlign="left">
             <ListItem color={useColorModeValue("brand.900", "brand.100")}>
               <ListIcon as={FaCheckCircle} color={useColorModeValue("brand.500", "brand.300")} />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              I think outside the box. I'm willing to try new ideas and workflows to accomplish our goals. 
             </ListItem>
             <ListItem color={useColorModeValue("brand.900", "brand.100")}>
               <ListIcon as={FaWrench} color={useColorModeValue("brand.500", "brand.300")} />
-              Assumenda, quia temporibus eveniet a libero incidunt suscipit
+              I'm able to quickly learn new technologies and apply their core principles to projects efficiently. 
             </ListItem>
             <ListItem color={useColorModeValue("brand.900", "brand.100")}>
               <ListIcon as={FaHandshake} color={useColorModeValue("brand.500", "brand.300")} />
-              Quidem, ipsam illum quis sed voluptatum quae eum fugit earum
+              I love making new relationships and working with people of all walks of life. Let's work and create something great!
             </ListItem>
             {/* You can also use custom icons from react-icons */}
           </List>
           </Container>
         </Box>
 
-        <Container mt={8}>
-          <Wrap justify="center" spacing="35px" shouldWrapChildren="true">
+        <Container 
+          mt={8}
+          marginX="auto"
+        >
+          <Wrap justify="center" spacing="35px">
             <WrapItem>
               <Button as="a" target="_blank" variant="outline" href="https://github.com/jfrausto" textTransform="lowercase" leftIcon={<FaGithub />}>
                 Github

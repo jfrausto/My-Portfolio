@@ -6,7 +6,6 @@ import {
   Text,
   Grid,
   Link,
-  useColorMode,
   useColorModeValue
 } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
@@ -20,6 +19,9 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 import theme from "./theme";
 import MainHeading from "./components/MainHeading";
 import Nav from './components/Nav';
+import Goo from "./components/Goo";
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -27,7 +29,7 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
+      <Box textAlign="center" fontSize={["sm","md", "lg", "xl"]}>
 
         {/* 
             TOP GRID
@@ -38,7 +40,8 @@ function App() {
         */}
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
-          <MainHeading />
+          <MainHeading  />
+          <Goo/>
         </Grid>
 
         {/* 
@@ -87,21 +90,7 @@ function App() {
           position="relative"
         >
           <Nav/>
-          <Box 
-            position="absolute"
-            bottom="0"
-            left="43.5%"
-            justifySelf="center"
-            p={2}
-            borderRadius="md"
-            border="1px solid"
-            borderColor={useColorModeValue("brand.900", "brand.300")}
-            >
-              <Text fontSize="16px">
-                powered by <Link href="https://chakra-ui.com/" isExternal>Chakra UI</Link>
-              </Text>
-          </Box>
-
+          <Footer/>
         </Box>
         
 
