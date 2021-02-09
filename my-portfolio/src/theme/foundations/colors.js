@@ -1,10 +1,10 @@
 const colors = {
     brand: {
-      100: "#ffebeb", // 
-      300: "#ffa400", // yellow
-      500: "#009ffd", // 
-      700: "#dc143c", // red
-      900: "#233347"
+      100: "#ffebeb", // lavender blush
+      300: "#ffa400", // orange web
+      500: "#009ffd", // carolina blue
+      700: "#dc143c", // crimson
+      900: "#233347"  // prussian blue
     }
 };
 

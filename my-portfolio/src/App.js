@@ -2,51 +2,98 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
+  Center,
   Text,
-  VStack,
   Grid,
-  Button,
-  Link
+  Link,
+  useColorModeValue
 } from '@chakra-ui/react';
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import theme from "./theme.js";
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+// import About from "./components/About";
+// import Contact from "./components/Contact";
+// import Portfolio from "./components/Portfolio";
 import theme from "./theme";
-// import {Button} from "./theme/components/Button";
+import MainHeading from "./components/MainHeading";
+import Nav from './components/Nav';
+import Goo from "./components/Goo";
+import Footer from './components/Footer';
+
+
 
 function App() {
 
-  // const theme = useTheme();
-
-  // my personal brand colors
-  // const myColors = {
-  //   colors: {
-  //     brand: {
-  //       100: "#ffebeb",
-  //       300: "#ffa400",
-  //       500: "#009ffd",
-  //       700: "#dc143c",
-  //       900: "#233347"
-  //     }
-  //   }
-  // };
-  // const theme = extendTheme( myColors );
 
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
+      <Box textAlign="center" fontSize={["sm","md", "lg", "xl"]}>
+
+        {/* 
+            TOP GRID
+            WILL HOLD NAME INTRO
+            TYPOGRAPHY
+            COLOR MODE SWITCHER
+            
+        */}
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text color="brand.300">
-              Portfolio coming soon...!
-            </Text>
-            <Button>yooo</Button>
-            <Text color="brand.700">hi i should be red</Text>
-
-          </VStack>
+          <MainHeading  />
+          <Goo/>
         </Grid>
+
+        {/* 
+            PLACE HOLDING TEXT EVERYWHERE rn
+            these two grids provide 100% window height rn
+            will contain side navigation bar with
+            - about me
+            - links and screenshots to projects
+            - contact 
+        */}
+        {/* <Router> */}
+          {/* <VStack
+            minH="15vh"
+            borderTop="2px"
+            borderTopColor="brand.300"
+            p={3}
+          >
+            <Nav/>
+          </VStack>
+
+          <Box
+            minH="85vh"
+            bg="blue.800"
+            p={8}
+          >   
+            <Switch>
+              <Route exact path={["/", "/about"]}>
+                <About/>
+              </Route>
+              <Route exact path="/portfolio" >
+                <Portfolio />
+              </Route>
+              <Route path="/contact" >
+                <Contact/>
+              </Route>
+            </Switch>
+          </Box> */}
+        {/* </Router> */}
+        
+        <Box
+          minH="100vh"
+          maxW="1500px"
+          marginX="auto"
+          py={8}
+          px={2}
+          position="relative"
+        >
+          <Nav/>
+          <Footer/>
+        </Box>
+        
+
       </Box>
     </ChakraProvider>
   );
