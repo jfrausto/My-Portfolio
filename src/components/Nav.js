@@ -1,5 +1,5 @@
 import React from 'react';
-import { HStack, VStack, IconButton, useColorModeValue, useColorMode } from "@chakra-ui/react";
+import { HStack, VStack, IconButton, useColorModeValue, useColorMode, Button } from "@chakra-ui/react";
 import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import About from "./About";
@@ -18,62 +18,68 @@ export default function Nav() {
             borderRadius="md"
             _selected={{ 
               bg: useColorModeValue("transparent", "transparent"),
-              border: "4px solid",
+              border: "2px solid",
               borderColor: useColorModeValue("brand.900", "brand.300"),
             }}
             _focus={{
               outline: "none"}} 
           >
-            <IconButton 
-              size="lg" 
-              h="12" w="12"
+            <Button 
+              size={["xs", "sm", "lg", "lg"]} 
               variant="ghost" 
-              icon={<FaMale/>}
+              leftIcon={<FaMale/>}
+              textTransform="lowercase"
               color={useColorModeValue("brand.900", "brand.100")}
               _focus={{
                   outline: "none"
               }} 
-            />
+            >
+              Me
+            </Button>
           </Tab>
           <Tab 
           borderRadius="md"
           _selected={{ 
             bg: useColorModeValue("transparent", "transparent"),
-            border: "4px solid",
+            border: "2px solid",
               borderColor: useColorModeValue("brand.900", "brand.300"),
           }}
           _focus={{ outline: "none" }} 
           >
-            <IconButton 
-              size="lg" 
-              h="12" w="12"
+            <Button 
+              size={["xs", "sm", "lg", "lg"]} 
               variant="ghost" 
-              icon={<FaLaptopCode/>}
+              leftIcon={<FaLaptopCode/>}
+              textTransform="lowercase"
               color={useColorModeValue("brand.900", "brand.100")}
               _focus={{
                   outline: "none"
               }} 
-            />
+            >
+              Work
+            </Button>
           </Tab>
           <Tab
             borderRadius="md"
             _selected={{ 
               bg: useColorModeValue("transparent", "transparent"),
-              border: "4px solid",
+              border: "2px solid",
               borderColor: useColorModeValue("brand.900", "brand.300"),
             }}
             _focus={{ outline: "none" }} 
             >
-            <IconButton 
-              size="lg" 
-              h="12" w="12"
+            <Button 
+              size={["xs", "sm", "lg", "lg"]} 
               variant="ghost" 
-              icon={<FaMailBulk/>}
+              leftIcon={<FaMailBulk/>}
+              textTransform="lowercase"
               color={useColorModeValue("brand.900", "brand.100")}
               _focus={{
                   outline: "none"
               }} 
-            />
+            >
+              Chat
+            </Button>
           </Tab>
         </TabList>
         <TabPanels mt={4}>

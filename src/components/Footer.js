@@ -11,6 +11,7 @@ export default function Footer() {
             left="20%"
             w="60%"
             p={2}
+            mb={1}
             borderRadius="md"
             border="1px solid"
             borderColor={useColorModeValue("brand.900", "brand.300")}
