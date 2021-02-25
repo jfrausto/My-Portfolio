@@ -10,7 +10,8 @@ import {
   HStack,
   Link,
   Tag,
-  Badge
+  Badge,
+  Text
 } from '@chakra-ui/react'
 import React from 'react';
 import VibeeMov from './videos/Vibee_TAB_demo.mp4';
@@ -43,9 +44,11 @@ export default function Portfolio() {
                       Vibee
                     </Link>
                   </Heading>
-                  <video autoPlay={true} loop={true}>
-                    <source src={VibeeMov} type="video/mp4" />
-                  </video>
+                  <Link href="https://evening-sands-41595.herokuapp.com/" isExternal>
+                    <video autoPlay={true} loop={true}>
+                      <source src={VibeeMov} type="video/mp4" />
+                    </video>
+                  </Link>
                   <HStack spacing={1}>
                     <Tag 
                       size="sm"
@@ -76,6 +79,7 @@ export default function Portfolio() {
                       Socket.io
                     </Tag>
                   </HStack>
+                  <Link fontSize="sm" pt="0" href="https://github.com/jfrausto/FindYourVibe" isExternal><i>source</i></Link>
                 </VStack>
             </Center>
           </WrapItem>
@@ -87,9 +91,11 @@ export default function Portfolio() {
                     Pub Crawl
                   </Link>
                 </Heading>
-                <video autoPlay={true} loop={true}>
-                  <source src={PubCrawlMov} type="video/mp4" />
-                </video>
+                <Link href="https://willrodgers7.github.io/Ultimate-Pub-Crawl/" isExternal>
+                  <video autoPlay={true} loop={true}>
+                    <source src={PubCrawlMov} type="video/mp4" />
+                  </video>
+                </Link>
                 <HStack spacing={1}>
                     <Tag 
                       size="sm"
@@ -113,6 +119,7 @@ export default function Portfolio() {
                       jQuery
                     </Tag>
                   </HStack>
+                  <Link fontSize="sm" pt="0" href="https://github.com/WillRodgers7/Ultimate-Pub-Crawl" isExternal><i>source</i></Link>
               </VStack>
             </Center>
           </WrapItem>
@@ -124,9 +131,11 @@ export default function Portfolio() {
                     Learning Squads
                   </Link>
                 </Heading>
-                <video autoPlay={true} loop={true}>
-                  <source src={LearnSquadMov} type="video/mp4" />
-                </video>
+                <Link href="https://learn-squad.herokuapp.com/" isExternal>
+                  <video autoPlay={true} loop={true}>
+                    <source src={LearnSquadMov} type="video/mp4" />
+                  </video>
+                </Link>
                 <HStack spacing={1}>
                     <Tag 
                       size="sm"
@@ -150,6 +159,7 @@ export default function Portfolio() {
                       Bootstrap
                     </Tag>
                   </HStack>
+                  <Link fontSize="sm" pt="0" href="https://github.com/shadysaleh01/Learn-Squad" isExternal><i>source</i></Link>
               </VStack>
             </Center>
           </WrapItem>
@@ -161,9 +171,11 @@ export default function Portfolio() {
                     Burger DB
                   </Link>
                 </Heading>
-                <video autoPlay={true} loop={true}>
-                  <source src={BurgerDBMov} type="video/mp4" />
-                </video>
+                <Link href="https://gentle-oasis-33918.herokuapp.com/" isExternal>
+                  <video autoPlay={true} loop={true}>
+                    <source src={BurgerDBMov} type="video/mp4" />
+                  </video>
+                </Link>
                 <HStack spacing={1}>
                     <Tag 
                       size="sm"
@@ -187,6 +199,7 @@ export default function Portfolio() {
                       Bootstrap
                     </Tag>
                   </HStack>
+                  <Link fontSize="sm" pt="0" href="https://github.com/jfrausto/out-n-in-burger" isExternal><i>source</i></Link>
               </VStack>
             </Center>
           </WrapItem>
@@ -198,9 +211,11 @@ export default function Portfolio() {
                     Budget Tracker
                   </Link>
                 </Heading>
-                <video autoPlay={true} loop={true}>
-                  <source src={BudgetTrackerMov} type="video/mp4" />
-                </video>
+                <Link href="https://rocky-garden-31416.herokuapp.com/" isExternal>
+                  <video autoPlay={true} loop={true}>
+                    <source src={BudgetTrackerMov} type="video/mp4" />
+                  </video>
+                </Link>
                 <HStack spacing={1}>
                     <Tag 
                       size="sm"
@@ -224,6 +239,7 @@ export default function Portfolio() {
                       Webpack
                     </Tag>
                   </HStack>
+                  <Link fontSize="sm" pt="0" href="https://github.com/jfrausto/Budget-Tracker" isExternal><i>source</i></Link>
               </VStack>
             </Center>
           </WrapItem>
