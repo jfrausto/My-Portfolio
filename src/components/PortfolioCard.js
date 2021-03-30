@@ -1,16 +1,23 @@
 import React from 'react';
 import {
   Center, 
+  Box,
   VStack,
   Heading,
   Link,
   HStack,
   Tag,
-  useColorModeValue,
+  Text,
+  Accordion,
+  AccordionItem,
+  AccordionIcon,
+  AccordionButton,
+  AccordionPanel,
+  useColorModeValue
 } from '@chakra-ui/react';
 
 
-export default function PortfolioCard({ project, video, prod, code, tags}) {
+export default function PortfolioCard({ project, video, prod, code, tags, desc}) {
   return (
     <>
       <Center maxW="480px" p={3}>
@@ -38,6 +45,24 @@ export default function PortfolioCard({ project, video, prod, code, tags}) {
                        )
                     }
                   </HStack>
+                  <Accordion allowToggle>
+                    <AccordionItem>
+                      <p>
+                        <AccordionButton>
+                          <AccordionIcon />
+                          <Box flex="1" textAlign="center">
+                            about  
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </p>
+                      <AccordionPanel pb={1}>
+                        <Text fontSize={["xs", "xs", "sm", "sm"]}>
+                          {desc}
+                        </Text>
+                      </AccordionPanel>
+                    </AccordionItem>
+                  </Accordion>
                   <Link fontSize="sm" pt="0" href={code} isExternal><i>source</i></Link>
                 </VStack>
             </Center>
