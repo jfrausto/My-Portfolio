@@ -35,18 +35,18 @@ body,
 }
 
 .hooks-main > div:nth-child(1) {
+  width: 100px;
+  height: 100px;
+}
+
+.hooks-main > div:nth-child(2) {
   width: 120px;
   height: 120px;
 }
 
-.hooks-main > div:nth-child(2) {
-  width: 250px;
-  height: 250px;
-}
-
 .hooks-main > div:nth-child(3) {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
 }
 
 .hooks-main > div::after {
@@ -61,17 +61,17 @@ body,
 }
 
 .hooks-main > div:nth-child(2)::after {
-  top: 70px;
-  left: 70px;
-  width: 70px;
-  height: 70px;
-}
-
-.hooks-main > div:nth-child(3)::after {
   top: 50px;
   left: 50px;
   width: 50px;
   height: 50px;
+}
+
+.hooks-main > div:nth-child(3)::after {
+  top: 40px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .hooks-main {

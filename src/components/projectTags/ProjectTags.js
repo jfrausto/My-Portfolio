@@ -34,7 +34,7 @@ export const pubCrawlTags = [
 
 export const learnSquadTags = [
   {
-    color: "green",
+    color: "purple",
     tech: "Materialize"
   },
   {
@@ -42,8 +42,8 @@ export const learnSquadTags = [
     tech: "Express"
   },
   {
-    color: "purple",
-    tech: "Bootstrap"
+    color: "green",
+    tech: "SQL"
   }
 ];
 export const burgerTags = [

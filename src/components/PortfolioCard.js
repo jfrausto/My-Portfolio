@@ -36,6 +36,7 @@ export default function PortfolioCard({ project, video, prod, code, tags, desc})
                     {
                       tags.map( (obj) => 
                         <Tag
+                          key={obj.tech}
                           size="sm"
                           variant="subtle"
                           colorScheme={obj.color}
