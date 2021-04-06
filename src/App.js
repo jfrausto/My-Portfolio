@@ -2,20 +2,9 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
-  Center,
-  Text,
   Grid,
-  Link,
-  useColorModeValue
 } from '@chakra-ui/react';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import theme from "./theme.js";
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-// import About from "./components/About";
-// import Contact from "./components/Contact";
-// import Portfolio from "./components/Portfolio";
 import theme from "./theme";
 import MainHeading from "./components/MainHeading";
 import Nav from './components/Nav';
@@ -45,42 +34,9 @@ function App() {
         </Grid>
 
         {/* 
-            PLACE HOLDING TEXT EVERYWHERE rn
-            these two grids provide 100% window height rn
-            will contain side navigation bar with
-            - about me
-            - links and screenshots to projects
-            - contact 
+            changed to box container
+             - nav holds page components because of tab/panel structure
         */}
-        {/* <Router> */}
-          {/* <VStack
-            minH="15vh"
-            borderTop="2px"
-            borderTopColor="brand.300"
-            p={3}
-          >
-            <Nav/>
-          </VStack>
-
-          <Box
-            minH="85vh"
-            bg="blue.800"
-            p={8}
-          >   
-            <Switch>
-              <Route exact path={["/", "/about"]}>
-                <About/>
-              </Route>
-              <Route exact path="/portfolio" >
-                <Portfolio />
-              </Route>
-              <Route path="/contact" >
-                <Contact/>
-              </Route>
-            </Switch>
-          </Box> */}
-        {/* </Router> */}
-        
         <Box
           minH="100vh"
           maxW="1500px"
@@ -92,8 +48,6 @@ function App() {
           <Nav/>
           <Footer/>
         </Box>
-        
-
       </Box>
     </ChakraProvider>
   );

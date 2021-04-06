@@ -4,8 +4,6 @@ import {
   VStack,
   Heading,
   Text,
-  Box,
-  HStack
  } from '@chakra-ui/react';
 // import FloatingArrows from './FloatingArrows';
 
@@ -34,10 +32,6 @@ export default function MainHeading() {
             >
               V V V V V V V V V V 
             </Text>
-              {/* <HStack> */}
-                {/* <FloatingArrows/> */}
-              {/* </HStack> */}
-
           </VStack>
     </>
   )
