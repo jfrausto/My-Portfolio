@@ -1,7 +1,9 @@
 import React from 'react';
-import { Box, Heading, Stack, Image, Center, VStack} from "@chakra-ui/react";
+import { Box, Heading, Stack, Image, Center, VStack, Wrap, WrapItem} from "@chakra-ui/react";
 import AboutMeTags from './AboutMeTags';
+import QuickFacts from './QuickFacts';
 import Jesse from "./images/jesse_shopped_cropped.jpg";
+import { FaHome, FaTv, FaItunesNote, FaPizzaSlice, FaSeedling, FaFire } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -38,20 +40,69 @@ export default function About() {
                   <Heading textDecoration="underline crimson" pb={2} textAlign={["center", "center", "left", "left"]}>
                     Nice to meet you!
                   </Heading>
+
                   <Heading 
+                    mb={3}
                     textAlign={["center", "center", "left", "left"]}
                     textDecoration="italic" as="h3" size="sm"
                   >
                     -- Technical Skills --
                   </Heading>
-                  {/* <Text 
-                    fontSize={["xs", "xs", "sm", "sm"]}
-                    align={["center", "center", "left", "left"]}
-                  >
-                    MongoDB, Express, React, Node, PHP, CSS, HTML, SQL, Socket.io, Webpack, Javascript, JQuery
-                  </Text> */}
+
                   <AboutMeTags />
-                  
+
+                  <Heading 
+                    mt={3}
+                    mb={1}
+                    textAlign={["center", "center", "left", "left"]}
+                    textDecoration="italic" as="h3" size="sm"
+                  >
+                    -- Quick Facts --
+                  </Heading>
+                  <Wrap spacing="15px" align="center">
+                    <WrapItem>
+                      <QuickFacts 
+                        icon={FaHome}
+                        heading={"Hometown"}
+                        snippet={"East Los Angeles, CA"}
+                      />
+                    </WrapItem>
+                    <WrapItem>
+                      <QuickFacts 
+                        icon={FaSeedling}
+                        heading={"Currently Learning"}
+                        snippet={"PHP, Kotlin, TypeScript"}
+                      />
+                    </WrapItem>
+                    <WrapItem>
+                      <QuickFacts 
+                        icon={FaItunesNote}
+                        heading={"Music"}
+                        snippet={"Funk, Psych, R&B"}
+                      />
+                    </WrapItem>
+                    <WrapItem>
+                      <QuickFacts 
+                        icon={FaFire}
+                        heading={"Current Interests"}
+                        snippet={"Cryptos, Music Production"}
+                      />
+                    </WrapItem>
+                    <WrapItem>
+                      <QuickFacts 
+                        icon={FaTv}
+                        heading={"Now Watching"}
+                        snippet={"Archer, Beserk"}
+                      />
+                    </WrapItem>
+                    <WrapItem>
+                      <QuickFacts 
+                        icon={FaPizzaSlice}
+                        heading={"Favorite Cuisines"}
+                        snippet={"Korean, Mexican, Japanese"}
+                      />
+                    </WrapItem>
+                  </Wrap>
             </Box>
         </VStack>
       </Stack>
