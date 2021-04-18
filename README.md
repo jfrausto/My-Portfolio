@@ -4,6 +4,9 @@ Welcome to my portfolio! It is powered by [React](https://reactjs.org/) and the 
 
 ~ ~ [Visit](https://fraustojesse.herokuapp.com/) my portfolio ~ ~
 
+![My Portfolio](/screenshots/portfolio-screenshot.png?raw=true 'Portfolio start screen')
+~ ~ Check out light and dark mode! ~ ~
+
 ## Features
 
 - Chakra's dark mode / light mode switcher
