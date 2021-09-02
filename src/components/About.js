@@ -71,7 +71,7 @@ export default function About() {
                       <QuickFacts 
                         icon={FaSeedling}
                         heading={"Currently Learning"}
-                        snippet={"PHP, Kotlin, TypeScript"}
+                        snippet={"TypeScript, Next.js"}
                       />
                     </WrapItem>
                     <WrapItem>
@@ -92,7 +92,7 @@ export default function About() {
                       <QuickFacts 
                         icon={FaTv}
                         heading={"Now Watching"}
-                        snippet={"Archer, Beserk"}
+                        snippet={"What If..?, Archer"}
                       />
                     </WrapItem>
                     <WrapItem>

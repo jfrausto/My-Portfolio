@@ -13,17 +13,25 @@ import {
   AccordionIcon,
   AccordionButton,
   AccordionPanel,
-  useColorModeValue
+  useColorMode
 } from '@chakra-ui/react';
 
 
 export default function PortfolioCard({ project, video, prod, code, tags, desc}) {
+
+  const {colorMode} = useColorMode();
+
+  const cardColors = {
+    light: "brand.500",
+    dark: "brand.300"
+  }
+
   return (
     <>
       <Center maxW="480px" p={3}>
                 <VStack>
                   <Heading size="md">
-                    <Link href={prod} color={useColorModeValue("brand.500", "brand.300")} isExternal>
+                    <Link href={prod} color={cardColors[colorMode]} isExternal>
                       {project}
                     </Link>
                   </Heading>

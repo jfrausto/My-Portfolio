@@ -74,3 +74,17 @@ export const budgetTrackTags = [
     tech: "Webpack"
   }
 ];
+export const cryptickTags = [
+  {
+    color: "blue",
+    tech: "Next.js"
+  },
+  {
+    color: "yellow",
+    tech: "FramerMotion"
+  },
+  {
+    color: "blue",
+    tech: "Typescript"
+  }
+];

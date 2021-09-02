@@ -1,8 +1,19 @@
-import { Heading, Box, Container, Wrap, WrapItem, Button, List, ListIcon, ListItem, useColorModeValue } from '@chakra-ui/react'
+import { Heading, Box, Container, Wrap, WrapItem, Button, List, ListIcon, ListItem, useColorMode } from '@chakra-ui/react'
 import React from 'react';
 import { FaGithub, FaLinkedin, FaGoogle, FaCheckCircle, FaWrench, FaHandshake } from "react-icons/fa";
 
 export default function Contact() {
+
+  const {colorMode} = useColorMode();
+
+  const iconColors = {
+    light: "brand.500",
+    dark: "brand.300"
+  }
+  const fontColors = {
+    light: "brand.900",
+    dark: "brand.100"
+  }
   return (
     <div>
       
@@ -14,7 +25,7 @@ export default function Contact() {
             <Heading 
               textAlign="center" 
               textDecoration="underline crimson"
-              color={useColorModeValue("brand.900", "brand.100")}
+              color={fontColors[colorMode]}
             >
               Want to work together?
             </Heading>
@@ -27,16 +38,16 @@ export default function Contact() {
         >
           <Container mt={8}>
           <List spacing={4} textAlign="left">
-            <ListItem color={useColorModeValue("brand.900", "brand.100")}>
-              <ListIcon as={FaCheckCircle} color={useColorModeValue("brand.500", "brand.300")} />
+            <ListItem color={fontColors[colorMode]}>
+              <ListIcon as={FaCheckCircle} color={iconColors[colorMode]} />
               I think outside the box. I'm willing to try new ideas and workflows to accomplish our goals. 
             </ListItem>
-            <ListItem color={useColorModeValue("brand.900", "brand.100")}>
-              <ListIcon as={FaWrench} color={useColorModeValue("brand.500", "brand.300")} />
+            <ListItem color={fontColors[colorMode]}>
+              <ListIcon as={FaWrench} color={iconColors[colorMode]} />
               I'm able to quickly learn new technologies and apply their core principles to projects efficiently. 
             </ListItem>
-            <ListItem color={useColorModeValue("brand.900", "brand.100")}>
-              <ListIcon as={FaHandshake} color={useColorModeValue("brand.500", "brand.300")} />
+            <ListItem color={fontColors[colorMode]}>
+              <ListIcon as={FaHandshake} color={iconColors[colorMode]} />
               I love making new relationships and working with people of all walks of life. Let's work and create something great!
             </ListItem>
             {/* You can also use custom icons from react-icons */}

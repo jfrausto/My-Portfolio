@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  useColorModeValue, 
+  useColorMode, 
   VStack,
   Heading,
   Text,
@@ -12,6 +12,9 @@ import {
 const AnimatedText = animated(Text);
 
 export default function MainHeading() {
+
+  const {colorMode} = useColorMode();
+
   const props = useSpring({
     to: async (next, cancel) => {
       await next({ transform: 'translateY(20px)'});
@@ -25,12 +28,35 @@ export default function MainHeading() {
     from: {transform: 'translateY(0px)'},
     config: config.wobbly
   });
+
+  const headingColor = {
+    light: "brand.900",
+    dark: "brand.300"
+  }
+  const leftGrad = {
+    light: "brand.500",
+    dark: "brand.700"
+  }
+  const rightGrad = {
+    light: "brand.700",
+    dark: "brand.500"
+  }
+  const arrowBg = {
+    light: "brand.900",
+    dark: "transparent"
+  }
+  const arrowColor = {
+    light: "brand.300",
+    dark: "brand.700"
+  }
+
+
   return (
     <>
       <VStack spacing={8}>
             {/* need special variants for name and taglines */}
             <Heading 
-              color={useColorModeValue("brand.900", "brand.300")}
+              color={headingColor[colorMode]}
               fontSize={["xl", "2xl", "3xl", "5xl"]} 
               lineHeight="shorter" 
               maxW="56rem"
@@ -39,7 +65,7 @@ export default function MainHeading() {
             >
               Hi, my name is 
                 <chakra.span
-                  bgGradient={`linear(to-l, ${useColorModeValue("brand.500", "brand.700")}, ${useColorModeValue("brand.700", "brand.500")})`}
+                  bgGradient={`linear(to-l, ${leftGrad[colorMode]}, ${rightGrad[colorMode]})`}
                   bgClip="text"
                 > Jesse Frausto
                 </chakra.span>. 
@@ -48,8 +74,8 @@ export default function MainHeading() {
             <AnimatedText 
               p={2}
               borderRadius="lg"
-              bg={useColorModeValue("brand.900", "transparent")}
-              color={useColorModeValue("brand.300", "brand.700")} 
+              bg={arrowBg[colorMode]}
+              color={arrowColor[colorMode]} 
               fontWeight="black"
               position="relative"
               style={props}

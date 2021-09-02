@@ -144,18 +144,18 @@ export default function AboutMeTags() {
           <Tag
             size="sm"
             variant="subtle"
-            colorScheme="orange"
+            colorScheme="green"
           >
-            PHP
+            Firebase
           </Tag>
         </WrapItem>
         <WrapItem>
           <Tag
             size="sm"
             variant="subtle"
-            colorScheme="green"
+            colorScheme="blue"
           >
-            Firebase
+            Next.js
           </Tag>
         </WrapItem>
       </Wrap>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useColorModeValue, Text } from "@chakra-ui/react";
+import { useColorMode, Text } from "@chakra-ui/react";
 import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
 import About from "./About";
 import Contact from "./Contact";
@@ -9,6 +9,14 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 
 
 export default function Nav() {
+
+  const {colorMode} = useColorMode();
+
+  const brandColors = {
+    light: "brand.900",
+    dark: "brand.300"
+  }
+
   return (
     <>
       <Tabs isFitted variant="unstyled">
@@ -16,9 +24,9 @@ export default function Nav() {
           <Tab
             borderRadius="md"
             _selected={{ 
-              bg: useColorModeValue("transparent", "transparent"),
+              bg: "transparent",
               border: "2px solid",
-              borderColor: useColorModeValue("brand.900", "brand.300"),
+              borderColor: brandColors[colorMode],
             }}
             _focus={{
               outline: "none"}} 
@@ -28,9 +36,9 @@ export default function Nav() {
           <Tab 
           borderRadius="md"
           _selected={{ 
-            bg: useColorModeValue("transparent", "transparent"),
+            bg: "transparent",
             border: "2px solid",
-              borderColor: useColorModeValue("brand.900", "brand.300"),
+            borderColor: brandColors[colorMode],
           }}
           _focus={{ outline: "none" }} 
           >
@@ -39,9 +47,9 @@ export default function Nav() {
           <Tab
             borderRadius="md"
             _selected={{ 
-              bg: useColorModeValue("transparent", "transparent"),
+              bg: "transparent",
               border: "2px solid",
-              borderColor: useColorModeValue("brand.900", "brand.300"),
+              borderColor: brandColors[colorMode],
             }}
             _focus={{ outline: "none" }} 
             >
