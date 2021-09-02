@@ -22,6 +22,8 @@ Here are a list of some projects that you will find inside my portfolio:
   - an application that plans a night out for you! Just choose your city and a list of bars, pubs, and restaurants will display with a map on how to get to each one. Allows customization of the type of establishments you would like to visit.
 - [Learning Squads](https://learn-squad.herokuapp.com/)
   - a fast paced trivia game. Pick a squad, and take a quiz from 6 different categories. Earn enough cash, and you will be able to mark your territory on a map in the name of your squad!
+- [Cryptick](https://cryptick.vercel.app/cryptoDashboard)
+  - a minimalistic price ticker for crypto currencies. Quickly check current info of your favorite cryptos
 
 ## Questions
 
